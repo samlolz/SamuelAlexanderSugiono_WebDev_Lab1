@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - White and Light Simple Presentation</title>
+    <style>
+        body {
+            background: radial-gradient(circle at 30% 30%, #b8b6e9 0%, #6a89cc 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 350px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+            padding: 32px 28px 24px 28px;
+        }
+        .avatar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+        .avatar-icon {
+            background: linear-gradient(135deg, #6a89cc 0%, #b8b6e9 100%);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.25); /* shadow hitam */
+        }
+        .avatar-icon::before {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 32px;
+            background: url('https://img.icons8.com/ios-filled/50/ffffff/user-male-circle.png') no-repeat center center;
+            background-size: contain;
+        }
+        h2 {
+            text-align: center;
+            color: #2d5c88;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        p {
+            text-align: center;
+            color: #888;
+            margin-bottom: 22px;
+            font-size: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #2d5c88;
+            font-weight: 500;
+        }
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 14px;
+            border: 1px solid #dfe6e9;
+            border-radius: 6px;
+            font-size: 15px;
+            background: #f8f8f8;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+        .options label {
+            margin-bottom: 0;
+            font-weight: normal;
+            color: #444;
+        }
+        .options a {
+            color: #6a89cc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .btn-login {
+            width: 100%;
+            padding: 11px 0;
+            background: linear-gradient(90deg, #6a89cc 0%, #7f7fd5 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 14px;
+            /* Tidak berubah warna saat hover */
+            transition: none;
+        }
+        .btn-login:hover {
+            background: linear-gradient(90deg, #6a89cc 0%, #7f7fd5 100%);
+        }
+        .divider {
+            text-align: center;
+            margin: 16px 0;
+            color: #aaa;
+            font-size: 14px;
+            position: relative;
+        }
+        .divider::before, .divider::after {
+            content: '';
+            display: inline-block;
+            width: 40px;
+            height: 1px;
+            background: #eee;
+            vertical-align: middle;
+            margin: 0 8px;
+        }
+        .btn-google {
+            width: 100%;
+            padding: 10px 0;
+            background: #fff;
+            color: #db4437;
+            border: 1px solid #db4437;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .btn-google img {
+            width: 18px;
+            height: 18px;
+        }
+        .register {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .register a {
+            color: #6a89cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <div class="avatar-icon"></div>
+        </div>
+        <h2>Selamat Datang</h2>
+        <p>Silahkan Login untuk Melanjutkan</p>
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Masukkan Email Anda" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Masukkan Password anda" required>
+            <div class="options">
+                <label><input type="checkbox"> Ingat Saya</label>
+                <a href="#">Lupa Password</a>
+            </div>
+            <button type="submit" class="btn-login">MASUK</button>
+        </form>
+        <div class="divider">atau masuk dengan</div>
+        <button class="btn-google">
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
+            Google
+        </button>
+        <div class="register">
+            Belum punya akun? <a href="#">Daftar Sekarang</a>
+        </div>
+    </div>
+</body>
+</html>
